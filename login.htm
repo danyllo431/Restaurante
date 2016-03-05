@@ -1,0 +1,117 @@
+<html>
+<head>
+    
+<style type="text/css">
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+*{margin:0;padding:0;}
+
+body{
+    background:#4B311D;
+}
+
+.button{
+    width:100px;
+    background:#E77116;
+    display:block;
+    margin:0 auto;
+    margin-top:1%;
+    padding:10px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    cursor:pointer;
+    transition:background .3s;
+    -webkit-transition:background .3s;
+}
+
+.button:hover{
+    background:#D57A35;
+}
+
+#login{
+    width:400px;
+    margin:0 auto;
+    margin-top:8px;
+    margin-bottom:2%;
+    transition:opacity 1s;
+    -webkit-transition:opacity 1s;
+}
+
+#triangulo{
+    width:0;
+    border-top:12x solid transparent;
+    border-right:12px solid transparent;
+    border-bottom:12px solid #E77116;
+    border-left:12px solid transparent;
+    margin:0 auto;
+}
+
+#login h1{
+    background:#E77116;
+    padding:20px 0;
+     font-size:150%;
+    font-weight:300;
+    text-align:center;
+    color:#fff;
+}
+
+form{
+    background:#734420;
+    padding:6% 4%;
+}
+
+input[type="text"],input[type="password"]{
+    width:82%;
+    background:#F7EEE7;
+    margin-bottom:4%;
+    border:1px solid #ccc;
+    padding:4%;
+     font-size:150%;
+    color:#555;
+}
+
+input[type="submit"]{
+    width:100%;
+    background:#E77116;
+    font-size:150%;
+    border:0;
+    padding:4%;
+    color:#fff;
+    cursor:pointer;
+    transition:background .3s;
+    -webkit-transition:background .3s;
+}
+
+input[type="submit"]:hover{
+    background:#D57A35;
+}
+nav ul li a{
+    text-decoration: none;
+}
+label{
+  color:#FFF;
+
+}
+</style>
+</head>
+
+<head>
+<body>
+<span href="#" class="button" id="toggle-login">Acesse</span>
+<div id="login">
+    <div id="triangulo"></div>
+    <h1>Login</h1>
+<form action="checalogin.php" method="post">
+     <label> Login:</label> <input type="text" name="login"  />
+
+    <label> Senha:</label> <input type="password" name="senha"/>
+	
+	<input type="submit" value=" Entrar "/>
+</form>
+ </div>
+<script src="index.js"></script>
+</body>
+
+</html>
