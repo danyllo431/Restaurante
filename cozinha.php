@@ -9,7 +9,7 @@
 
 	if ($_SESSION['funcao'] == 2){ //Garçom
 		header("Location: login.htm");	
-		die();
+		die();//ishucsjkhcosaja
 	}
 
 ?>
